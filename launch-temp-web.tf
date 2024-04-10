@@ -1,7 +1,7 @@
 
 resource "aws_launch_template" "template-web"{
     name= "launch-web-template"
-    image-id="ami-080e1f13689e07408"
+    image_id="ami-080e1f13689e07408"
     instance_type="t2.micro"
     key_name="add key name"
 
@@ -13,7 +13,7 @@ resource "aws_launch_template" "template-web"{
     tag_specifications {
 
         resource_type="instance"
-        tags{
+        tags={
             Name="web-tier"
         }
     }
