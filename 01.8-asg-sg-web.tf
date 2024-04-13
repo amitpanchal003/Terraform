@@ -9,7 +9,10 @@ resource "aws_security_group" "asg-security-group-web" {
     from_port       = 80
     to_port         = 80
     protocol        = "tcp"
-    security_groups = [aws_security_group.alb-security-group-web.id]
+    cidr_blocks = ["0.0.0.0/0"]
+
+    # if not work try adding all trafic i.e.: "-1" port
+    #security_groups = [aws_security_group.alb-security-group-web.id]
   }
 
   ingress {
