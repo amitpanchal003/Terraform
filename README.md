@@ -32,5 +32,9 @@ configure aws <b>IAM</b> credentials
 <li>Load-Balancer</li>
 <li>Auto-Scaling Group</li>
 <li>RDS DB-Instance</li>
+<li>RDS DB-Instance</li>
+<li>RDS DB-Instance</li>
+<li>RDS DB-Instance</li>
+<li>RDS DB-Instance</li>
 </ul>
 
